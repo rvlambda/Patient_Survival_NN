@@ -32,8 +32,8 @@ def main():
 
 
     if submit:
-        data = np.array([apache_4a_hospital_death_prob,apache_4a_icu_death_prob,gcs_motor_apache,gcs_eyes_apache,
-        gcs_verbal_apache,d1_spo2_min,d1_sysbp_min,d1_diasbp_noninvasive_min,d1_temp_min,d1_mbp_min]).reshape(1,-1)
+        data = np.array([float(apache_4a_hospital_death_prob),float(apache_4a_icu_death_prob),float(gcs_motor_apache),float(gcs_eyes_apache),
+        float(gcs_verbal_apache),float(d1_spo2_min),float(d1_sysbp_min),float(d1_diasbp_noninvasive_min),float(d1_temp_min),float(d1_mbp_min)]).reshape(1,-1)
 
         pred = get_prediction(data=data, model=model)
 
