@@ -7,7 +7,7 @@ from sklearn.ensemble import RandomForestRegressor
 from prediction import get_prediction, ordinal_encoder
 from keras.models import load_model
 
-model = load_model('Patient_Survival_NN_Model.h5')
+model = load_model(r'Model/Patient_Survival_NN_Model.h5')
 
 st.set_page_config(page_title="Patient Survival Prediction App",
                    page_icon="🚧", layout="wide")
