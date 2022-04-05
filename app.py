@@ -18,16 +18,16 @@ def main():
     with st.form('prediction_form'):
 
         st.subheader("Enter the input for following features:")
-        apache_4a_hospital_death_prob = st.text_input("apache_4a_hospital_death_prob", value="", max_chars=6)
-        apache_4a_icu_death_prob = st.text_input("apache_4a_icu_death_prob", value="", max_chars=6)
-        gcs_motor_apache = st.text_input("gcs_motor_apache", value="", max_chars=6)
-        gcs_eyes_apache = st.text_input("gcs_eyes_apache", value="", max_chars=6)
-        gcs_verbal_apache = st.text_input("gcs_verbal_apache", value="", max_chars=6)
-        d1_spo2_min = st.text_input("d1_spo2_min", value="", max_chars=6)
-        d1_sysbp_min = st.text_input("d1_sysbp_min", value="", max_chars=6)
-        d1_diasbp_noninvasive_min = st.text_input("d1_diasbp_noninvasive_min", value="", max_chars=6)
-        d1_temp_min = st.text_input("d1_temp_min", value="", max_chars=6)
-        d1_mbp_min = st.text_input("d1_mbp_min", value="", max_chars=6)
+        apache_4a_hospital_death_prob = st.text_input("The APACHE IVa probabilistic prediction of in-hospital mortality", value="", max_chars=6)
+        apache_4a_icu_death_prob = st.text_input("The APACHE IVa probabilistic prediction of in ICU mortality", value="", max_chars=6)
+        gcs_motor_apache = st.text_input("The motor component of the Glasgow Coma Scale measured during the first 24 hours which results in the highest APACHE III score", value="", max_chars=6)
+        gcs_eyes_apache = st.text_input("The eye opening component of the Glasgow Coma Scale measured during the first 24 hours which results in the highest APACHE III score", value="", max_chars=6)
+        gcs_verbal_apache = st.text_input("The verbal component of the Glasgow Coma Scale measured during the first 24 hours which results in the highest APACHE III score", value="", max_chars=6)
+        d1_spo2_min = st.text_input("The patient's lowest peripheral oxygen saturation during the first 24 hours of their unit stay", value="", max_chars=6)
+        d1_sysbp_min = st.text_input("The patient's lowest systolic blood pressure during the first 24 hours of their unit stay, either non-invasively or invasively measured", value="", max_chars=6)
+        d1_diasbp_noninvasive_min = st.text_input("The patient's lowest diastolic blood pressure during the first 24 hours of their unit stay, non-invasively measured", value="", max_chars=6)
+        d1_temp_min = st.text_input("The patient's lowest core temperature during the first 24 hours of their unit stay", value="", max_chars=6)
+        d1_mbp_min = st.text_input("The patient's lowest mean blood pressure during the first 24 hours of their unit stay, either non-invasively or invasively measured", value="", max_chars=6)
         submit = st.form_submit_button("Predict")
 
 
